@@ -12,6 +12,7 @@ body {
   align-items: center;
   justify-content: space-between;
   gap: 11px;
+  margin-top: 20px;
 }
 .logo-andTitle {
   display: flex;
@@ -26,6 +27,26 @@ body {
   font-style: normal;
   font-weight: 700;
   line-height: 30px; /* 150% */
+}
+.banner-button {
+  color: #fff;
+  font-family: Quicksand;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 30px;
+  text-decoration: none;
+}
+.banner-button-body {
+  display: flex;
+  width: 197px;
+  padding: 10px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  border-radius: 12px;
+  background: var(--Black, #111);
+  border: none;
 }
 /* nav link colors */
 #nav-link-1 {
@@ -63,4 +84,83 @@ body {
   font-weight: 600;
   line-height: 30px; /* 150% */
   text-decoration: none;
+}
+.hamburger-line {
+  border: 1px solid black;
+  width: 30px;
+}
+.hamburger {
+  display: flex;
+  gap: 10px;
+  flex-direction: column;
+  display: none;
+}
+/* Nav work End */
+/* Banner section work start */
+.banner-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 50px;
+}
+.banner-title {
+  color: var(--Black, #111);
+  font-family: Quicksand;
+  font-size: 56px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 61px;
+}
+.banner-orange-color-words {
+  color: var(--Orange, #fea301);
+}
+.banner-blue-color-words {
+  color: var(--Sky-Blue, #01acfd);
+}
+.banner-description {
+  color: var(--Black, #111);
+  font-family: Quicksand;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  padding: 24px 0;
+}
+/* Media Query */
+@media screen and (max-width: 768px) {
+  * {
+    margin: 0;
+    padding: 0;
+  }
+  body {
+    margin: 0 5%;
+  }
+  /* nav bar work start for smaller devices */
+  .logo-title {
+    display: none;
+  }
+  .nav-links {
+    display: none;
+  }
+  .nav-btn-body {
+    display: none;
+  }
+  .hamburger {
+    display: block;
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+  }
+  /* nav bar work end for smaller devices */
+  /* Banner section work start */
+  .banner-container {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+  }
+  .banner-image{
+    /* width: 100%; */
+    margin: 0 17px;
+  }
 }
